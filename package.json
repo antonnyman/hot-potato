@@ -1,0 +1,23 @@
+{
+  "name": "hot-potato",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anton Nyman <anton@antonnyman.se>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server/start.js -w -p 1234",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w"
+  },
+  "devDependencies": {
+    "@firebase/app-types": "^0.3.2",
+    "@types/node": "^10.12.18",
+    "chokidar": "^2.0.4",
+    "commander": "^2.19.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "firebase": "latest"
+  }
+}

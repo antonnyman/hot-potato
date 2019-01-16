@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "hot-potato",
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "dist/game.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    { "src": "/game", "dest": "dist/game.js" },
+    { "src": "/", "dest": "/index.js" }
+  ]
+}
